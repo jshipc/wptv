@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WordPressApi.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [WordPressApi signInWithURL:@"http://wptv.io" username:@"naqi" password:@"Be#t%tM*#y^GKIga8^QMuCCQ" success:^(NSURL *xmlrpcURL) {
+        NSLog(@"%@", xmlrpcURL);
+    } failure:^(NSError *error) {
+        NSLog(@"%@", error);
+    }];
     return YES;
 }
 
