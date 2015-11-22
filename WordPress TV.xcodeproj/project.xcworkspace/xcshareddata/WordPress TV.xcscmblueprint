@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C81312516A70D72899AB0EB282B03AA29A4631FC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F113A2DE60CD635FABB7E32238D59EFF17D82DF7" : 0,
+    "C81312516A70D72899AB0EB282B03AA29A4631FC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F6014487-DFCB-49C2-A39F-6D67B14A5488",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F113A2DE60CD635FABB7E32238D59EFF17D82DF7" : "WordPress-API-iOS\/",
+    "C81312516A70D72899AB0EB282B03AA29A4631FC" : "wptv\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WordPress TV",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WordPress TV.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jshipc\/wptv.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C81312516A70D72899AB0EB282B03AA29A4631FC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/naqi\/WordPress-API-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F113A2DE60CD635FABB7E32238D59EFF17D82DF7"
+    }
+  ]
+}

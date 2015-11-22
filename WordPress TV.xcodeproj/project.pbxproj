@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0758A3187F459170C28846F8 /* libPods-WordPress TV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B8536313E253924E0E2D8E /* libPods-WordPress TV.a */; };
 		8305A1701C022A7A00BD6500 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A16F1C022A7A00BD6500 /* main.m */; };
 		8305A1731C022A7A00BD6500 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A1721C022A7A00BD6500 /* AppDelegate.m */; };
 		8305A1761C022A7A00BD6500 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A1751C022A7A00BD6500 /* ViewController.m */; };
@@ -17,6 +16,32 @@
 		8305A18C1C022BD200BD6500 /* WTTemplateMariaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A18B1C022BD200BD6500 /* WTTemplateMariaVC.m */; };
 		8305A1911C022BFA00BD6500 /* WTTemplateDane.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A1901C022BFA00BD6500 /* WTTemplateDane.m */; };
 		8305A1941C022C2F00BD6500 /* WTTemplateSophieVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A1931C022C2F00BD6500 /* WTTemplateSophieVC.m */; };
+		BE75B47F1C02582C00DF5340 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE75B47E1C02582C00DF5340 /* libiconv.tbd */; };
+		BE9017911C0249A200DC133D /* WordPressApi.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9017791C0249A200DC133D /* WordPressApi.m */; };
+		BE9017921C0249A200DC133D /* WordPressRestApi.m in Sources */ = {isa = PBXBuildFile; fileRef = BE90177C1C0249A200DC133D /* WordPressRestApi.m */; };
+		BE9017931C0249A200DC133D /* WordPressRestApiJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BE90177E1C0249A200DC133D /* WordPressRestApiJSONRequestOperation.m */; };
+		BE9017941C0249A200DC133D /* WordPressRestApiJSONRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9017801C0249A200DC133D /* WordPressRestApiJSONRequestOperationManager.m */; };
+		BE9017951C0249A200DC133D /* WordPressXMLRPCApi.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9017821C0249A200DC133D /* WordPressXMLRPCApi.m */; };
+		BE9017981C0249A200DC133D /* WPHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9017881C0249A200DC133D /* WPHTTPRequestOperation.m */; };
+		BE9017991C0249A200DC133D /* WPRSDParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BE90178A1C0249A200DC133D /* WPRSDParser.m */; };
+		BE90179A1C0249A200DC133D /* WPXMLRPCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BE90178C1C0249A200DC133D /* WPXMLRPCClient.m */; };
+		BE90179B1C0249A200DC133D /* WPXMLRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE90178E1C0249A200DC133D /* WPXMLRPCRequest.m */; };
+		BE90179C1C0249A200DC133D /* WPXMLRPCRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9017901C0249A200DC133D /* WPXMLRPCRequestOperation.m */; };
+		BEBB79671C02516F001E3EB8 /* WPBase64Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBB795B1C02516F001E3EB8 /* WPBase64Utils.m */; };
+		BEBB79681C02516F001E3EB8 /* WPStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBB795D1C02516F001E3EB8 /* WPStringUtils.m */; };
+		BEBB79691C02516F001E3EB8 /* WPXMLRPCDataCleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBB79601C02516F001E3EB8 /* WPXMLRPCDataCleaner.m */; };
+		BEBB796A1C02516F001E3EB8 /* WPXMLRPCDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBB79621C02516F001E3EB8 /* WPXMLRPCDecoder.m */; };
+		BEBB796B1C02516F001E3EB8 /* WPXMLRPCDecoderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBB79641C02516F001E3EB8 /* WPXMLRPCDecoderDelegate.m */; };
+		BEBB796C1C02516F001E3EB8 /* WPXMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBB79661C02516F001E3EB8 /* WPXMLRPCEncoder.m */; };
+		BED1E9CE1C02506000802A15 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1E9BC1C02506000802A15 /* AFHTTPRequestOperation.m */; };
+		BED1E9CF1C02506000802A15 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1E9BE1C02506000802A15 /* AFHTTPRequestOperationManager.m */; };
+		BED1E9D01C02506000802A15 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1E9C01C02506000802A15 /* AFHTTPSessionManager.m */; };
+		BED1E9D11C02506000802A15 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1E9C31C02506000802A15 /* AFNetworkReachabilityManager.m */; };
+		BED1E9D21C02506000802A15 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1E9C51C02506000802A15 /* AFSecurityPolicy.m */; };
+		BED1E9D31C02506000802A15 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1E9C71C02506000802A15 /* AFURLConnectionOperation.m */; };
+		BED1E9D41C02506000802A15 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1E9C91C02506000802A15 /* AFURLRequestSerialization.m */; };
+		BED1E9D51C02506000802A15 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1E9CB1C02506000802A15 /* AFURLResponseSerialization.m */; };
+		BED1E9D61C02506000802A15 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BED1E9CD1C02506000802A15 /* AFURLSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +65,61 @@
 		8305A1921C022C2F00BD6500 /* WTTemplateSophieVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTemplateSophieVC.h; sourceTree = "<group>"; };
 		8305A1931C022C2F00BD6500 /* WTTemplateSophieVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTemplateSophieVC.m; sourceTree = "<group>"; };
 		BD7E3E4799ABD4B751AB371D /* Pods-WordPress TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPress TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordPress TV/Pods-WordPress TV.release.xcconfig"; sourceTree = "<group>"; };
+		BE75B47E1C02582C00DF5340 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		BE9017781C0249A200DC133D /* WordPressApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordPressApi.h; sourceTree = "<group>"; };
+		BE9017791C0249A200DC133D /* WordPressApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordPressApi.m; sourceTree = "<group>"; };
+		BE90177A1C0249A200DC133D /* WordPressBaseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordPressBaseApi.h; sourceTree = "<group>"; };
+		BE90177B1C0249A200DC133D /* WordPressRestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordPressRestApi.h; sourceTree = "<group>"; };
+		BE90177C1C0249A200DC133D /* WordPressRestApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordPressRestApi.m; sourceTree = "<group>"; };
+		BE90177D1C0249A200DC133D /* WordPressRestApiJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordPressRestApiJSONRequestOperation.h; sourceTree = "<group>"; };
+		BE90177E1C0249A200DC133D /* WordPressRestApiJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordPressRestApiJSONRequestOperation.m; sourceTree = "<group>"; };
+		BE90177F1C0249A200DC133D /* WordPressRestApiJSONRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordPressRestApiJSONRequestOperationManager.h; sourceTree = "<group>"; };
+		BE9017801C0249A200DC133D /* WordPressRestApiJSONRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordPressRestApiJSONRequestOperationManager.m; sourceTree = "<group>"; };
+		BE9017811C0249A200DC133D /* WordPressXMLRPCApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordPressXMLRPCApi.h; sourceTree = "<group>"; };
+		BE9017821C0249A200DC133D /* WordPressXMLRPCApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordPressXMLRPCApi.m; sourceTree = "<group>"; };
+		BE9017871C0249A200DC133D /* WPHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHTTPRequestOperation.h; sourceTree = "<group>"; };
+		BE9017881C0249A200DC133D /* WPHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHTTPRequestOperation.m; sourceTree = "<group>"; };
+		BE9017891C0249A200DC133D /* WPRSDParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPRSDParser.h; sourceTree = "<group>"; };
+		BE90178A1C0249A200DC133D /* WPRSDParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPRSDParser.m; sourceTree = "<group>"; };
+		BE90178B1C0249A200DC133D /* WPXMLRPCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPCClient.h; sourceTree = "<group>"; };
+		BE90178C1C0249A200DC133D /* WPXMLRPCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPXMLRPCClient.m; sourceTree = "<group>"; };
+		BE90178D1C0249A200DC133D /* WPXMLRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPCRequest.h; sourceTree = "<group>"; };
+		BE90178E1C0249A200DC133D /* WPXMLRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPXMLRPCRequest.m; sourceTree = "<group>"; };
+		BE90178F1C0249A200DC133D /* WPXMLRPCRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPCRequestOperation.h; sourceTree = "<group>"; };
+		BE9017901C0249A200DC133D /* WPXMLRPCRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPXMLRPCRequestOperation.m; sourceTree = "<group>"; };
+		BEBB795A1C02516F001E3EB8 /* WPBase64Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBase64Utils.h; sourceTree = "<group>"; };
+		BEBB795B1C02516F001E3EB8 /* WPBase64Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBase64Utils.m; sourceTree = "<group>"; };
+		BEBB795C1C02516F001E3EB8 /* WPStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPStringUtils.h; sourceTree = "<group>"; };
+		BEBB795D1C02516F001E3EB8 /* WPStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPStringUtils.m; sourceTree = "<group>"; };
+		BEBB795E1C02516F001E3EB8 /* WPXMLRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPC.h; sourceTree = "<group>"; };
+		BEBB795F1C02516F001E3EB8 /* WPXMLRPCDataCleaner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPCDataCleaner.h; sourceTree = "<group>"; };
+		BEBB79601C02516F001E3EB8 /* WPXMLRPCDataCleaner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPXMLRPCDataCleaner.m; sourceTree = "<group>"; };
+		BEBB79611C02516F001E3EB8 /* WPXMLRPCDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPCDecoder.h; sourceTree = "<group>"; };
+		BEBB79621C02516F001E3EB8 /* WPXMLRPCDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPXMLRPCDecoder.m; sourceTree = "<group>"; };
+		BEBB79631C02516F001E3EB8 /* WPXMLRPCDecoderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPCDecoderDelegate.h; sourceTree = "<group>"; };
+		BEBB79641C02516F001E3EB8 /* WPXMLRPCDecoderDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPXMLRPCDecoderDelegate.m; sourceTree = "<group>"; };
+		BEBB79651C02516F001E3EB8 /* WPXMLRPCEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPCEncoder.h; sourceTree = "<group>"; };
+		BEBB79661C02516F001E3EB8 /* WPXMLRPCEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPXMLRPCEncoder.m; sourceTree = "<group>"; };
+		BEBB796D1C025286001E3EB8 /* wptv.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wptv.pch; sourceTree = "<group>"; };
+		BED1E9BB1C02506000802A15 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		BED1E9BC1C02506000802A15 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		BED1E9BD1C02506000802A15 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		BED1E9BE1C02506000802A15 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		BED1E9BF1C02506000802A15 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		BED1E9C01C02506000802A15 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		BED1E9C11C02506000802A15 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		BED1E9C21C02506000802A15 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		BED1E9C31C02506000802A15 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		BED1E9C41C02506000802A15 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		BED1E9C51C02506000802A15 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		BED1E9C61C02506000802A15 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		BED1E9C71C02506000802A15 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		BED1E9C81C02506000802A15 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		BED1E9C91C02506000802A15 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		BED1E9CA1C02506000802A15 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		BED1E9CB1C02506000802A15 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		BED1E9CC1C02506000802A15 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		BED1E9CD1C02506000802A15 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		DDEF93149201061705A151CF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0758A3187F459170C28846F8 /* libPods-WordPress TV.a in Frameworks */,
+				BE75B47F1C02582C00DF5340 /* libiconv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +147,7 @@
 		645A8607CBCA02773F5F07F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE75B47E1C02582C00DF5340 /* libiconv.tbd */,
 				DDEF93149201061705A151CF /* libPods.a */,
 				79B8536313E253924E0E2D8E /* libPods-WordPress TV.a */,
 			);
@@ -76,6 +157,7 @@
 		8305A1621C022A7A00BD6500 = {
 			isa = PBXGroup;
 			children = (
+				BE9017751C02499100DC133D /* APIClient */,
 				8305A16D1C022A7A00BD6500 /* WordPress TV */,
 				8305A16C1C022A7A00BD6500 /* Products */,
 				213FE3F63372D298A5637105 /* Pods */,
@@ -111,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				8305A16F1C022A7A00BD6500 /* main.m */,
+				BEBB796D1C025286001E3EB8 /* wptv.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -130,6 +213,91 @@
 			name = "Template Views";
 			sourceTree = "<group>";
 		};
+		BE9017751C02499100DC133D /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB79591C02516F001E3EB8 /* WPXMLRPC */,
+				BED1E9BA1C02506000802A15 /* AFNetworking */,
+				BE9017761C0249A200DC133D /* WordPressApi */,
+			);
+			name = APIClient;
+			sourceTree = "<group>";
+		};
+		BE9017761C0249A200DC133D /* WordPressApi */ = {
+			isa = PBXGroup;
+			children = (
+				BE9017781C0249A200DC133D /* WordPressApi.h */,
+				BE9017791C0249A200DC133D /* WordPressApi.m */,
+				BE90177A1C0249A200DC133D /* WordPressBaseApi.h */,
+				BE90177B1C0249A200DC133D /* WordPressRestApi.h */,
+				BE90177C1C0249A200DC133D /* WordPressRestApi.m */,
+				BE90177D1C0249A200DC133D /* WordPressRestApiJSONRequestOperation.h */,
+				BE90177E1C0249A200DC133D /* WordPressRestApiJSONRequestOperation.m */,
+				BE90177F1C0249A200DC133D /* WordPressRestApiJSONRequestOperationManager.h */,
+				BE9017801C0249A200DC133D /* WordPressRestApiJSONRequestOperationManager.m */,
+				BE9017811C0249A200DC133D /* WordPressXMLRPCApi.h */,
+				BE9017821C0249A200DC133D /* WordPressXMLRPCApi.m */,
+				BE9017871C0249A200DC133D /* WPHTTPRequestOperation.h */,
+				BE9017881C0249A200DC133D /* WPHTTPRequestOperation.m */,
+				BE9017891C0249A200DC133D /* WPRSDParser.h */,
+				BE90178A1C0249A200DC133D /* WPRSDParser.m */,
+				BE90178B1C0249A200DC133D /* WPXMLRPCClient.h */,
+				BE90178C1C0249A200DC133D /* WPXMLRPCClient.m */,
+				BE90178D1C0249A200DC133D /* WPXMLRPCRequest.h */,
+				BE90178E1C0249A200DC133D /* WPXMLRPCRequest.m */,
+				BE90178F1C0249A200DC133D /* WPXMLRPCRequestOperation.h */,
+				BE9017901C0249A200DC133D /* WPXMLRPCRequestOperation.m */,
+			);
+			name = WordPressApi;
+			path = "../WordPress-API-iOS/WordPressApi";
+			sourceTree = "<group>";
+		};
+		BEBB79591C02516F001E3EB8 /* WPXMLRPC */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB795A1C02516F001E3EB8 /* WPBase64Utils.h */,
+				BEBB795B1C02516F001E3EB8 /* WPBase64Utils.m */,
+				BEBB795C1C02516F001E3EB8 /* WPStringUtils.h */,
+				BEBB795D1C02516F001E3EB8 /* WPStringUtils.m */,
+				BEBB795E1C02516F001E3EB8 /* WPXMLRPC.h */,
+				BEBB795F1C02516F001E3EB8 /* WPXMLRPCDataCleaner.h */,
+				BEBB79601C02516F001E3EB8 /* WPXMLRPCDataCleaner.m */,
+				BEBB79611C02516F001E3EB8 /* WPXMLRPCDecoder.h */,
+				BEBB79621C02516F001E3EB8 /* WPXMLRPCDecoder.m */,
+				BEBB79631C02516F001E3EB8 /* WPXMLRPCDecoderDelegate.h */,
+				BEBB79641C02516F001E3EB8 /* WPXMLRPCDecoderDelegate.m */,
+				BEBB79651C02516F001E3EB8 /* WPXMLRPCEncoder.h */,
+				BEBB79661C02516F001E3EB8 /* WPXMLRPCEncoder.m */,
+			);
+			path = WPXMLRPC;
+			sourceTree = "<group>";
+		};
+		BED1E9BA1C02506000802A15 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				BED1E9BB1C02506000802A15 /* AFHTTPRequestOperation.h */,
+				BED1E9BC1C02506000802A15 /* AFHTTPRequestOperation.m */,
+				BED1E9BD1C02506000802A15 /* AFHTTPRequestOperationManager.h */,
+				BED1E9BE1C02506000802A15 /* AFHTTPRequestOperationManager.m */,
+				BED1E9BF1C02506000802A15 /* AFHTTPSessionManager.h */,
+				BED1E9C01C02506000802A15 /* AFHTTPSessionManager.m */,
+				BED1E9C11C02506000802A15 /* AFNetworking.h */,
+				BED1E9C21C02506000802A15 /* AFNetworkReachabilityManager.h */,
+				BED1E9C31C02506000802A15 /* AFNetworkReachabilityManager.m */,
+				BED1E9C41C02506000802A15 /* AFSecurityPolicy.h */,
+				BED1E9C51C02506000802A15 /* AFSecurityPolicy.m */,
+				BED1E9C61C02506000802A15 /* AFURLConnectionOperation.h */,
+				BED1E9C71C02506000802A15 /* AFURLConnectionOperation.m */,
+				BED1E9C81C02506000802A15 /* AFURLRequestSerialization.h */,
+				BED1E9C91C02506000802A15 /* AFURLRequestSerialization.m */,
+				BED1E9CA1C02506000802A15 /* AFURLResponseSerialization.h */,
+				BED1E9CB1C02506000802A15 /* AFURLResponseSerialization.m */,
+				BED1E9CC1C02506000802A15 /* AFURLSessionManager.h */,
+				BED1E9CD1C02506000802A15 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +305,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8305A17F1C022A7A00BD6500 /* Build configuration list for PBXNativeTarget "WordPress TV" */;
 			buildPhases = (
-				BC5C0AFE4A4437BC29B2FED6 /* Check Pods Manifest.lock */,
 				8305A1671C022A7A00BD6500 /* Sources */,
 				8305A1681C022A7A00BD6500 /* Frameworks */,
 				8305A1691C022A7A00BD6500 /* Resources */,
-				7859D4F16491C9DE17BCB004 /* Embed Pods Frameworks */,
-				82307639176DA28E24BB8180 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,65 +363,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		7859D4F16491C9DE17BCB004 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordPress TV/Pods-WordPress TV-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82307639176DA28E24BB8180 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WordPress TV/Pods-WordPress TV-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BC5C0AFE4A4437BC29B2FED6 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		8305A1671C022A7A00BD6500 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9017941C0249A200DC133D /* WordPressRestApiJSONRequestOperationManager.m in Sources */,
 				8305A1911C022BFA00BD6500 /* WTTemplateDane.m in Sources */,
+				BEBB796B1C02516F001E3EB8 /* WPXMLRPCDecoderDelegate.m in Sources */,
+				BED1E9D21C02506000802A15 /* AFSecurityPolicy.m in Sources */,
+				BED1E9CF1C02506000802A15 /* AFHTTPRequestOperationManager.m in Sources */,
+				BED1E9CE1C02506000802A15 /* AFHTTPRequestOperation.m in Sources */,
+				BE90179B1C0249A200DC133D /* WPXMLRPCRequest.m in Sources */,
 				8305A1941C022C2F00BD6500 /* WTTemplateSophieVC.m in Sources */,
 				8305A1871C022B9000BD6500 /* WTTemplateAmitVC.m in Sources */,
+				BE9017991C0249A200DC133D /* WPRSDParser.m in Sources */,
+				BE90179C1C0249A200DC133D /* WPXMLRPCRequestOperation.m in Sources */,
 				8305A1761C022A7A00BD6500 /* ViewController.m in Sources */,
+				BEBB79671C02516F001E3EB8 /* WPBase64Utils.m in Sources */,
+				BE9017911C0249A200DC133D /* WordPressApi.m in Sources */,
 				8305A1731C022A7A00BD6500 /* AppDelegate.m in Sources */,
+				BED1E9D01C02506000802A15 /* AFHTTPSessionManager.m in Sources */,
+				BEBB796C1C02516F001E3EB8 /* WPXMLRPCEncoder.m in Sources */,
+				BEBB796A1C02516F001E3EB8 /* WPXMLRPCDecoder.m in Sources */,
+				BE9017931C0249A200DC133D /* WordPressRestApiJSONRequestOperation.m in Sources */,
+				BE9017981C0249A200DC133D /* WPHTTPRequestOperation.m in Sources */,
+				BED1E9D31C02506000802A15 /* AFURLConnectionOperation.m in Sources */,
+				BED1E9D41C02506000802A15 /* AFURLRequestSerialization.m in Sources */,
+				BED1E9D61C02506000802A15 /* AFURLSessionManager.m in Sources */,
+				BEBB79681C02516F001E3EB8 /* WPStringUtils.m in Sources */,
+				BED1E9D51C02506000802A15 /* AFURLResponseSerialization.m in Sources */,
+				BE9017951C0249A200DC133D /* WordPressXMLRPCApi.m in Sources */,
+				BE90179A1C0249A200DC133D /* WPXMLRPCClient.m in Sources */,
+				BE9017921C0249A200DC133D /* WordPressRestApi.m in Sources */,
 				8305A1701C022A7A00BD6500 /* main.m in Sources */,
+				BEBB79691C02516F001E3EB8 /* WPXMLRPCDataCleaner.m in Sources */,
+				BED1E9D11C02506000802A15 /* AFNetworkReachabilityManager.m in Sources */,
 				8305A18C1C022BD200BD6500 /* WTTemplateMariaVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +445,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					"TARGET_OS_IOS=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -341,6 +484,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_OS_IOS=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -357,11 +501,11 @@
 		};
 		8305A1801C022A7A00BD6500 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FA4C55F7B9F73EF87AEC50C /* Pods-WordPress TV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "WordPress TV/wptv.pch";
 				INFOPLIST_FILE = "WordPress TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.WordPress-TV";
@@ -371,11 +515,11 @@
 		};
 		8305A1811C022A7A00BD6500 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD7E3E4799ABD4B751AB371D /* Pods-WordPress TV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "WordPress TV/wptv.pch";
 				INFOPLIST_FILE = "WordPress TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.WordPress-TV";
