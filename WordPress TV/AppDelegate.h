@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WordPressRestApi.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
++ (id)sharedManager;
 
+@property (strong, nonatomic) UIWindow *window;
+@property (readwrite, nonatomic, retain) id<WordPressBaseApi> api;
 
 @end
 

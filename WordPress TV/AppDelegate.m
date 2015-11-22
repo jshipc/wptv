@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WordPressApi.h"
+#import "WordPressRestApi.h"
 
 @interface AppDelegate ()
 
@@ -15,15 +16,55 @@
 
 @implementation AppDelegate
 
++ (id)sharedInstance {
+    static AppDelegate *sharedApplication = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedApplication = [[self alloc] init];
+    });
+    return sharedApplication;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
     
-    [WordPressApi signInWithURL:@"http://wptv.io" username:@"naqi" password:@"Be#t%tM*#y^GKIga8^QMuCCQ" success:^(NSURL *xmlrpcURL) {
-        NSLog(@"%@", xmlrpcURL);
+    if (DEBUG) {
+        NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+        
+        [def setObject:@"naqi" forKey:@"wp_username"];
+        [def setObject:@"Be#t%tM*#y^GKIga8^QMuCCQ" forKey:@"wp_password"];
+        [def synchronize];
+    }
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    NSString *username = [def objectForKey:@"wp_username"];
+    NSString *password = [def objectForKey:@"wp_password"];
+    
+    [WordPressApi signInWithURL:@"http://wptv.io" username:username password:password success:^(NSURL *xmlrpcURL) {
+        NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+        [def setObject:[xmlrpcURL absoluteString] forKey:@"wp_xmlrpc"];
+        [def synchronize];
+        
+        if (self.api == nil) {
+            NSString *xmlrpc = [def objectForKey:@"wp_xmlrpc"];
+            if (xmlrpc) {
+                if (username && password) {
+                    self.api = [WordPressApi apiWithXMLRPCURL:xmlrpcURL username:username password:password];
+                }
+            }
+        }
+        
+        [self.api getPosts:10 success:^(NSArray *posts) {
+            NSLog(@"posts:%@", posts);
+        } failure:^(NSError *error) {
+            NSLog(@"error:%@", error);
+        }];
     } failure:^(NSError *error) {
         NSLog(@"%@", error);
     }];
+    
+    
     return YES;
 }
 
