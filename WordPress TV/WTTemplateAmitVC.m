@@ -7,31 +7,44 @@
 //
 
 #import "WTTemplateAmitVC.h"
+#import "UIImageView+asyncImageLoader.h"
 
 @interface WTTemplateAmitVC ()
+
+@property (strong, nonatomic) NSString *slideLabel;
+@property (strong, nonatomic) NSString *slideMessage;
+@property (strong, nonatomic) NSString *slideImageURL;
+
+@property (weak, nonatomic) IBOutlet UILabel *pageTitle;
+@property (weak, nonatomic) IBOutlet UILabel *pageMessage;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (weak, nonatomic) IBOutlet UIView *labelContainer;
 
 @end
 
 @implementation WTTemplateAmitVC
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
++(instancetype)instantiateFromStoryBoard{
+    
+    return [[UIStoryboard storyboardWithName:@"WTTemplateAmit" bundle:nil] instantiateViewControllerWithIdentifier:@"AmitBoard"];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewDidLoad{
+    
+    _pageTitle.text = _slideLabel;
+    _pageMessage.text = _slideMessage;
+    [_backgroundImage asyncSetImageWithURLString:_slideImageURL];
+    
+    _labelContainer.layer.cornerRadius = 3.0f;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)prepareWithTitle:(NSString*)title message:(NSString*)message backgroundImageURL:(NSString*)stringURL{
+    
+    _slideLabel = title;
+    _slideMessage = message;
+    _slideImageURL = stringURL;
 }
-*/
+
+
 
 @end

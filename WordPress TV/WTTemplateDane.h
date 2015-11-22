@@ -10,4 +10,7 @@
 
 @interface WTTemplateDane : UIViewController
 
++(instancetype)instantiateFromStoryBoard;
+-(void)prepareWithTitle:(NSString*)title message:(NSString*)message backgroundImageURL:(NSString*)stringURL;
+
 @end

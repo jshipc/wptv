@@ -7,31 +7,48 @@
 //
 
 #import "WTTemplateDane.h"
+#import "UIImageView+asyncImageLoader.h"
 
 @interface WTTemplateDane ()
+
+@property (strong, nonatomic) NSString *slideLabel;
+@property (strong, nonatomic) NSString *slideMessage;
+@property (strong, nonatomic) NSString *slideImageURL;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageWrapper;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 
 @end
 
 @implementation WTTemplateDane
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.imageWrapper.layer.cornerRadius = 3.0;
+    
+    [self.imageWrapper asyncSetImageWithURLString:_slideImageURL];
+    self.titleLabel.text = _slideLabel;
+    self.detailLabel.text = _slideMessage;
+    
+    [self.detailLabel sizeToFit];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
++(instancetype)instantiateFromStoryBoard{
+    
+    return [[UIStoryboard storyboardWithName:@"WTTemplateDane" bundle:nil] instantiateViewControllerWithIdentifier:@"DaneBoard"];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)prepareWithTitle:(NSString*)title message:(NSString*)message backgroundImageURL:(NSString*)stringURL{
+    
+    _slideLabel = title;
+    _slideMessage = message;
+    _slideImageURL = stringURL;
 }
-*/
+
+
+
 
 @end

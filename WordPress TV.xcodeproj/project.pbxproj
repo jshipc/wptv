@@ -16,6 +16,10 @@
 		8305A18C1C022BD200BD6500 /* WTTemplateMariaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A18B1C022BD200BD6500 /* WTTemplateMariaVC.m */; };
 		8305A1911C022BFA00BD6500 /* WTTemplateDane.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A1901C022BFA00BD6500 /* WTTemplateDane.m */; };
 		8305A1941C022C2F00BD6500 /* WTTemplateSophieVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A1931C022C2F00BD6500 /* WTTemplateSophieVC.m */; };
+		83963E931C0265F000183192 /* NSCache+sharedCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 83963E901C0265F000183192 /* NSCache+sharedCache.m */; };
+		83963E941C0265F000183192 /* WTTemplateAmit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83963E911C0265F000183192 /* WTTemplateAmit.storyboard */; };
+		83963E951C0265F000183192 /* WTTemplateDane.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83963E921C0265F000183192 /* WTTemplateDane.storyboard */; };
+		83963E981C02660800183192 /* UIImageView+asyncImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 83963E971C02660800183192 /* UIImageView+asyncImageLoader.m */; };
 		BE0F283C1C025CB900D59E02 /* WordPressApi.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F28241C025CB900D59E02 /* WordPressApi.m */; };
 		BE0F283D1C025CB900D59E02 /* WordPressRestApi.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F28271C025CB900D59E02 /* WordPressRestApi.m */; };
 		BE0F283E1C025CB900D59E02 /* WordPressRestApiJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F28291C025CB900D59E02 /* WordPressRestApiJSONRequestOperation.m */; };
@@ -64,6 +68,12 @@
 		8305A1901C022BFA00BD6500 /* WTTemplateDane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTemplateDane.m; sourceTree = "<group>"; };
 		8305A1921C022C2F00BD6500 /* WTTemplateSophieVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTemplateSophieVC.h; sourceTree = "<group>"; };
 		8305A1931C022C2F00BD6500 /* WTTemplateSophieVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTemplateSophieVC.m; sourceTree = "<group>"; };
+		83963E8F1C0265F000183192 /* NSCache+sharedCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCache+sharedCache.h"; sourceTree = "<group>"; };
+		83963E901C0265F000183192 /* NSCache+sharedCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCache+sharedCache.m"; sourceTree = "<group>"; };
+		83963E911C0265F000183192 /* WTTemplateAmit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WTTemplateAmit.storyboard; sourceTree = "<group>"; };
+		83963E921C0265F000183192 /* WTTemplateDane.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WTTemplateDane.storyboard; sourceTree = "<group>"; };
+		83963E961C02660800183192 /* UIImageView+asyncImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+asyncImageLoader.h"; sourceTree = "<group>"; };
+		83963E971C02660800183192 /* UIImageView+asyncImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+asyncImageLoader.m"; sourceTree = "<group>"; };
 		BD7E3E4799ABD4B751AB371D /* Pods-WordPress TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPress TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordPress TV/Pods-WordPress TV.release.xcconfig"; sourceTree = "<group>"; };
 		BE0F28231C025CB900D59E02 /* WordPressApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordPressApi.h; sourceTree = "<group>"; };
 		BE0F28241C025CB900D59E02 /* WordPressApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordPressApi.m; sourceTree = "<group>"; };
@@ -184,6 +194,7 @@
 				8305A1821C022AC200BD6500 /* Template Views */,
 				8305A17A1C022A7A00BD6500 /* Assets.xcassets */,
 				8305A17C1C022A7A00BD6500 /* Info.plist */,
+				83963E991C02662200183192 /* Extensions */,
 				8305A16E1C022A7A00BD6500 /* Supporting Files */,
 			);
 			path = "WordPress TV";
@@ -201,16 +212,29 @@
 		8305A1821C022AC200BD6500 /* Template Views */ = {
 			isa = PBXGroup;
 			children = (
+				83963E911C0265F000183192 /* WTTemplateAmit.storyboard */,
 				8305A1851C022B9000BD6500 /* WTTemplateAmitVC.h */,
 				8305A1861C022B9000BD6500 /* WTTemplateAmitVC.m */,
 				8305A18A1C022BD200BD6500 /* WTTemplateMariaVC.h */,
 				8305A18B1C022BD200BD6500 /* WTTemplateMariaVC.m */,
+				83963E921C0265F000183192 /* WTTemplateDane.storyboard */,
 				8305A18F1C022BFA00BD6500 /* WTTemplateDane.h */,
 				8305A1901C022BFA00BD6500 /* WTTemplateDane.m */,
 				8305A1921C022C2F00BD6500 /* WTTemplateSophieVC.h */,
 				8305A1931C022C2F00BD6500 /* WTTemplateSophieVC.m */,
 			);
 			name = "Template Views";
+			sourceTree = "<group>";
+		};
+		83963E991C02662200183192 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83963E961C02660800183192 /* UIImageView+asyncImageLoader.h */,
+				83963E971C02660800183192 /* UIImageView+asyncImageLoader.m */,
+				83963E8F1C0265F000183192 /* NSCache+sharedCache.h */,
+				83963E901C0265F000183192 /* NSCache+sharedCache.m */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		BE0F28221C025CB900D59E02 /* WordPressApi */ = {
@@ -356,7 +380,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8305A17B1C022A7A00BD6500 /* Assets.xcassets in Resources */,
+				83963E941C0265F000183192 /* WTTemplateAmit.storyboard in Resources */,
 				8305A1791C022A7A00BD6500 /* Main.storyboard in Resources */,
+				83963E951C0265F000183192 /* WTTemplateDane.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +395,7 @@
 			files = (
 				8305A1911C022BFA00BD6500 /* WTTemplateDane.m in Sources */,
 				BE0F283E1C025CB900D59E02 /* WordPressRestApiJSONRequestOperation.m in Sources */,
+				83963E981C02660800183192 /* UIImageView+asyncImageLoader.m in Sources */,
 				BEBB796B1C02516F001E3EB8 /* WPXMLRPCDecoderDelegate.m in Sources */,
 				BED1E9D21C02506000802A15 /* AFSecurityPolicy.m in Sources */,
 				BED1E9CF1C02506000802A15 /* AFHTTPRequestOperationManager.m in Sources */,
@@ -388,6 +415,7 @@
 				BEBB796A1C02516F001E3EB8 /* WPXMLRPCDecoder.m in Sources */,
 				BED1E9D31C02506000802A15 /* AFURLConnectionOperation.m in Sources */,
 				BE0F28461C025CB900D59E02 /* WPXMLRPCRequest.m in Sources */,
+				83963E931C0265F000183192 /* NSCache+sharedCache.m in Sources */,
 				BED1E9D41C02506000802A15 /* AFURLRequestSerialization.m in Sources */,
 				BED1E9D61C02506000802A15 /* AFURLSessionManager.m in Sources */,
 				BEBB79681C02516F001E3EB8 /* WPStringUtils.m in Sources */,

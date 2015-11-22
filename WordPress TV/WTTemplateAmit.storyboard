@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Template AmitVC-->
+        <scene sceneID="tEa-o1-iji">
+            <objects>
+                <viewController storyboardIdentifier="AmitBoard" id="uGr-ls-w9H" customClass="WTTemplateAmitVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tTg-LY-LhZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="oEg-J1-Kbk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zSV-6w-B0u">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JBD-8C-bNk">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <animations/>
+                            </imageView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3l-a8-RV2">
+                                <rect key="frame" x="200" y="200" width="1520" height="680"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swk-B4-4PY">
+                                        <rect key="frame" x="50" y="50" width="1420" height="100"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="0Cv-0X-XY7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="77"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXU-wZ-Kh8">
+                                        <rect key="frame" x="50" y="200" width="1420" height="5"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="yjz-LH-JJ8"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEm-3f-0lD">
+                                        <rect key="frame" x="50" y="255" width="1420" height="375"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="44"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36470588235294116" green="0.71372549019607845" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VEm-3f-0lD" secondAttribute="trailing" constant="50" id="0Fq-Yy-zfU"/>
+                                    <constraint firstAttribute="trailing" secondItem="CXU-wZ-Kh8" secondAttribute="trailing" constant="50" id="27P-HF-pa7"/>
+                                    <constraint firstItem="swk-B4-4PY" firstAttribute="leading" secondItem="Z3l-a8-RV2" secondAttribute="leading" constant="50" id="5bz-Vl-3Q8"/>
+                                    <constraint firstAttribute="trailing" secondItem="swk-B4-4PY" secondAttribute="trailing" constant="50" id="Hb0-17-txO"/>
+                                    <constraint firstItem="CXU-wZ-Kh8" firstAttribute="top" secondItem="swk-B4-4PY" secondAttribute="bottom" constant="50" id="MJw-L2-41d"/>
+                                    <constraint firstItem="VEm-3f-0lD" firstAttribute="top" secondItem="CXU-wZ-Kh8" secondAttribute="bottom" constant="50" id="XHf-Hk-Bk8"/>
+                                    <constraint firstItem="CXU-wZ-Kh8" firstAttribute="leading" secondItem="Z3l-a8-RV2" secondAttribute="leading" constant="50" id="aAe-Aj-qcd"/>
+                                    <constraint firstItem="swk-B4-4PY" firstAttribute="top" secondItem="Z3l-a8-RV2" secondAttribute="top" constant="50" id="mkx-xm-EHi"/>
+                                    <constraint firstAttribute="bottom" secondItem="VEm-3f-0lD" secondAttribute="bottom" constant="50" id="p1p-Rg-u2R"/>
+                                    <constraint firstItem="VEm-3f-0lD" firstAttribute="leading" secondItem="Z3l-a8-RV2" secondAttribute="leading" constant="50" id="pM0-2H-H1l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="oEg-J1-Kbk" firstAttribute="top" secondItem="JBD-8C-bNk" secondAttribute="bottom" id="2zw-uv-VmU"/>
+                            <constraint firstItem="oEg-J1-Kbk" firstAttribute="top" secondItem="Z3l-a8-RV2" secondAttribute="bottom" constant="200" id="F0G-mb-VqA"/>
+                            <constraint firstItem="Z3l-a8-RV2" firstAttribute="top" secondItem="tTg-LY-LhZ" secondAttribute="bottom" constant="200" id="NLv-Oh-zyi"/>
+                            <constraint firstAttribute="trailing" secondItem="Z3l-a8-RV2" secondAttribute="trailing" constant="200" id="cdV-r0-h3u"/>
+                            <constraint firstItem="JBD-8C-bNk" firstAttribute="top" secondItem="tTg-LY-LhZ" secondAttribute="bottom" id="dKR-0h-6a4"/>
+                            <constraint firstItem="Z3l-a8-RV2" firstAttribute="leading" secondItem="zSV-6w-B0u" secondAttribute="leading" constant="200" id="jjo-Vy-yb5"/>
+                            <constraint firstItem="JBD-8C-bNk" firstAttribute="leading" secondItem="zSV-6w-B0u" secondAttribute="leading" id="pGC-JQ-aMV"/>
+                            <constraint firstAttribute="trailing" secondItem="JBD-8C-bNk" secondAttribute="trailing" id="yKs-TM-fRt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="JBD-8C-bNk" id="KKL-qz-asv"/>
+                        <outlet property="labelContainer" destination="Z3l-a8-RV2" id="fFY-53-I7M"/>
+                        <outlet property="pageMessage" destination="VEm-3f-0lD" id="vdc-9n-09N"/>
+                        <outlet property="pageTitle" destination="swk-B4-4PY" id="thB-JC-xNE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxQ-mg-H8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="611" y="422"/>
+        </scene>
+    </scenes>
+</document>
