@@ -7,24 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0758A3187F459170C28846F8 /* libPods-WordPress TV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B8536313E253924E0E2D8E /* libPods-WordPress TV.a */; };
 		8305A1701C022A7A00BD6500 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A16F1C022A7A00BD6500 /* main.m */; };
 		8305A1731C022A7A00BD6500 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A1721C022A7A00BD6500 /* AppDelegate.m */; };
 		8305A1761C022A7A00BD6500 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A1751C022A7A00BD6500 /* ViewController.m */; };
 		8305A1791C022A7A00BD6500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305A1771C022A7A00BD6500 /* Main.storyboard */; };
 		8305A17B1C022A7A00BD6500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8305A17A1C022A7A00BD6500 /* Assets.xcassets */; };
 		8305A1871C022B9000BD6500 /* WTTemplateAmitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A1861C022B9000BD6500 /* WTTemplateAmitVC.m */; };
-		8305A1891C022BA500BD6500 /* WTTemplateMaria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305A1881C022BA500BD6500 /* WTTemplateMaria.storyboard */; };
 		8305A18C1C022BD200BD6500 /* WTTemplateMariaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A18B1C022BD200BD6500 /* WTTemplateMariaVC.m */; };
-		8305A18E1C022BE400BD6500 /* WTTemplateDane.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305A18D1C022BE400BD6500 /* WTTemplateDane.storyboard */; };
 		8305A1911C022BFA00BD6500 /* WTTemplateDane.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A1901C022BFA00BD6500 /* WTTemplateDane.m */; };
 		8305A1941C022C2F00BD6500 /* WTTemplateSophieVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305A1931C022C2F00BD6500 /* WTTemplateSophieVC.m */; };
-		8305A1961C022C4200BD6500 /* WTTemplateSophie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305A1951C022C4200BD6500 /* WTTemplateSophie.storyboard */; };
-		8305A1981C022D1000BD6500 /* WTTemplateAmit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8305A1971C022D1000BD6500 /* WTTemplateAmit.storyboard */; };
-		A02367CF9230DDA80EBB3934 /* Pods_WordPress_TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E37447B37F4F36B7FACB947 /* Pods_WordPress_TV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E37447B37F4F36B7FACB947 /* Pods_WordPress_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordPress_TV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA4C55F7B9F73EF87AEC50C /* Pods-WordPress TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPress TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordPress TV/Pods-WordPress TV.debug.xcconfig"; sourceTree = "<group>"; };
+		79B8536313E253924E0E2D8E /* libPods-WordPress TV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WordPress TV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8305A16B1C022A7A00BD6500 /* WordPress TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WordPress TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8305A16F1C022A7A00BD6500 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8305A1711C022A7A00BD6500 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,18 +33,14 @@
 		8305A17C1C022A7A00BD6500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8305A1851C022B9000BD6500 /* WTTemplateAmitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTemplateAmitVC.h; sourceTree = "<group>"; };
 		8305A1861C022B9000BD6500 /* WTTemplateAmitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTemplateAmitVC.m; sourceTree = "<group>"; };
-		8305A1881C022BA500BD6500 /* WTTemplateMaria.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WTTemplateMaria.storyboard; sourceTree = "<group>"; };
 		8305A18A1C022BD200BD6500 /* WTTemplateMariaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTemplateMariaVC.h; sourceTree = "<group>"; };
 		8305A18B1C022BD200BD6500 /* WTTemplateMariaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTemplateMariaVC.m; sourceTree = "<group>"; };
-		8305A18D1C022BE400BD6500 /* WTTemplateDane.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WTTemplateDane.storyboard; sourceTree = "<group>"; };
 		8305A18F1C022BFA00BD6500 /* WTTemplateDane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTemplateDane.h; sourceTree = "<group>"; };
 		8305A1901C022BFA00BD6500 /* WTTemplateDane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTemplateDane.m; sourceTree = "<group>"; };
 		8305A1921C022C2F00BD6500 /* WTTemplateSophieVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTemplateSophieVC.h; sourceTree = "<group>"; };
 		8305A1931C022C2F00BD6500 /* WTTemplateSophieVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTemplateSophieVC.m; sourceTree = "<group>"; };
-		8305A1951C022C4200BD6500 /* WTTemplateSophie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WTTemplateSophie.storyboard; sourceTree = "<group>"; };
-		8305A1971C022D1000BD6500 /* WTTemplateAmit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WTTemplateAmit.storyboard; sourceTree = "<group>"; };
-		A1CD4D3B15E54EB31E88A06B /* Pods-WordPress TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPress TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordPress TV/Pods-WordPress TV.release.xcconfig"; sourceTree = "<group>"; };
-		CD810BE4A9EBCF175C407B9E /* Pods-WordPress TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPress TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordPress TV/Pods-WordPress TV.debug.xcconfig"; sourceTree = "<group>"; };
+		BD7E3E4799ABD4B751AB371D /* Pods-WordPress TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPress TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordPress TV/Pods-WordPress TV.release.xcconfig"; sourceTree = "<group>"; };
+		DDEF93149201061705A151CF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A02367CF9230DDA80EBB3934 /* Pods_WordPress_TV.framework in Frameworks */,
+				0758A3187F459170C28846F8 /* libPods-WordPress TV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +58,8 @@
 		213FE3F63372D298A5637105 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CD810BE4A9EBCF175C407B9E /* Pods-WordPress TV.debug.xcconfig */,
-				A1CD4D3B15E54EB31E88A06B /* Pods-WordPress TV.release.xcconfig */,
+				6FA4C55F7B9F73EF87AEC50C /* Pods-WordPress TV.debug.xcconfig */,
+				BD7E3E4799ABD4B751AB371D /* Pods-WordPress TV.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -74,7 +67,8 @@
 		645A8607CBCA02773F5F07F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E37447B37F4F36B7FACB947 /* Pods_WordPress_TV.framework */,
+				DDEF93149201061705A151CF /* libPods.a */,
+				79B8536313E253924E0E2D8E /* libPods-WordPress TV.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,16 +118,12 @@
 		8305A1821C022AC200BD6500 /* Template Views */ = {
 			isa = PBXGroup;
 			children = (
-				8305A1971C022D1000BD6500 /* WTTemplateAmit.storyboard */,
 				8305A1851C022B9000BD6500 /* WTTemplateAmitVC.h */,
 				8305A1861C022B9000BD6500 /* WTTemplateAmitVC.m */,
-				8305A1881C022BA500BD6500 /* WTTemplateMaria.storyboard */,
 				8305A18A1C022BD200BD6500 /* WTTemplateMariaVC.h */,
 				8305A18B1C022BD200BD6500 /* WTTemplateMariaVC.m */,
-				8305A18D1C022BE400BD6500 /* WTTemplateDane.storyboard */,
 				8305A18F1C022BFA00BD6500 /* WTTemplateDane.h */,
 				8305A1901C022BFA00BD6500 /* WTTemplateDane.m */,
-				8305A1951C022C4200BD6500 /* WTTemplateSophie.storyboard */,
 				8305A1921C022C2F00BD6500 /* WTTemplateSophieVC.h */,
 				8305A1931C022C2F00BD6500 /* WTTemplateSophieVC.m */,
 			);
@@ -202,11 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8305A17B1C022A7A00BD6500 /* Assets.xcassets in Resources */,
-				8305A18E1C022BE400BD6500 /* WTTemplateDane.storyboard in Resources */,
-				8305A1891C022BA500BD6500 /* WTTemplateMaria.storyboard in Resources */,
 				8305A1791C022A7A00BD6500 /* Main.storyboard in Resources */,
-				8305A1981C022D1000BD6500 /* WTTemplateAmit.storyboard in Resources */,
-				8305A1961C022C4200BD6500 /* WTTemplateSophie.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +357,7 @@
 		};
 		8305A1801C022A7A00BD6500 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD810BE4A9EBCF175C407B9E /* Pods-WordPress TV.debug.xcconfig */;
+			baseConfigurationReference = 6FA4C55F7B9F73EF87AEC50C /* Pods-WordPress TV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -385,7 +371,7 @@
 		};
 		8305A1811C022A7A00BD6500 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1CD4D3B15E54EB31E88A06B /* Pods-WordPress TV.release.xcconfig */;
+			baseConfigurationReference = BD7E3E4799ABD4B751AB371D /* Pods-WordPress TV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

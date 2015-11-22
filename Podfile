@@ -1,13 +1,6 @@
-# Uncomment this line to define a global platform for your project
-# Uncomment this line if you're using Swift
-
-platform :ios
-
-use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+platform :tvos
 
 target 'WordPress TV' do
-
-pod 'AFNetworking'
-
-end
-
+	pod 'AFNetworking', '~> 3.0.0-beta.2'
+end 
