@@ -20,9 +20,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <animations/>
                             </imageView>
-                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3l-a8-RV2">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3l-a8-RV2">
                                 <rect key="frame" x="200" y="200" width="1520" height="680"/>
                                 <subviews>
+                                    <view alpha="0.90000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z18-1h-csJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="1520" height="680"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.36470588235294116" green="0.71372549019607845" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swk-B4-4PY">
                                         <rect key="frame" x="50" y="50" width="1420" height="100"/>
                                         <animations/>
@@ -50,7 +55,6 @@
                                     </label>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.36470588235294116" green="0.71372549019607845" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="VEm-3f-0lD" secondAttribute="trailing" constant="50" id="0Fq-Yy-zfU"/>
                                     <constraint firstAttribute="trailing" secondItem="CXU-wZ-Kh8" secondAttribute="trailing" constant="50" id="27P-HF-pa7"/>

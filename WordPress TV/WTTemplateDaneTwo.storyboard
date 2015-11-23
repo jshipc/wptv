@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ObO-2K-RoD">
+            <objects>
+                <viewController storyboardIdentifier="VersionTwo" id="xiQ-Qv-Tjb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S3L-vZ-9Er"/>
+                        <viewControllerLayoutGuide type="bottom" id="9fy-D9-WwC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qWX-NI-af8">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Wine Tasting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L43-Pf-vRu">
+                                <rect key="frame" x="609" y="50" width="702" height="80"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="GIq-ZW-l4M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_one.png" translatesAutoresizingMaskIntoConstraints="NO" id="MwN-ot-jNS">
+                                <rect key="frame" x="985" y="180" width="865" height="850"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aT-L0-kic">
+                                <rect key="frame" x="70" y="180" width="865" height="850"/>
+                                <animations/>
+                                <string key="text">Our exclusive wine list represents wines from every region in Spain, France, Italy and California, comprised of small and traditional family-owned wineries.
+Enjoy flavorful selection of tapas, cheeses and wines.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="MwN-ot-jNS" firstAttribute="leading" secondItem="4aT-L0-kic" secondAttribute="trailing" constant="50" id="1DR-Cp-8Lc"/>
+                            <constraint firstItem="4aT-L0-kic" firstAttribute="top" secondItem="L43-Pf-vRu" secondAttribute="bottom" constant="50" id="1im-Ad-XYn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MwN-ot-jNS" secondAttribute="trailing" constant="50" id="5Cs-CB-j0D"/>
+                            <constraint firstItem="4aT-L0-kic" firstAttribute="leading" secondItem="qWX-NI-af8" secondAttribute="leadingMargin" constant="50" id="Ccj-b0-3Er"/>
+                            <constraint firstItem="L43-Pf-vRu" firstAttribute="centerX" secondItem="qWX-NI-af8" secondAttribute="centerX" id="M6q-MS-f5b"/>
+                            <constraint firstItem="9fy-D9-WwC" firstAttribute="top" secondItem="MwN-ot-jNS" secondAttribute="bottom" constant="50" id="TLZ-Tm-hcu"/>
+                            <constraint firstItem="MwN-ot-jNS" firstAttribute="top" secondItem="L43-Pf-vRu" secondAttribute="bottom" constant="50" id="ZF7-6K-1WA"/>
+                            <constraint firstItem="9fy-D9-WwC" firstAttribute="top" secondItem="4aT-L0-kic" secondAttribute="bottom" constant="50" id="sKi-DA-quV"/>
+                            <constraint firstItem="L43-Pf-vRu" firstAttribute="top" secondItem="S3L-vZ-9Er" secondAttribute="bottom" constant="50" id="sWr-gY-4Wy"/>
+                            <constraint firstItem="MwN-ot-jNS" firstAttribute="width" secondItem="4aT-L0-kic" secondAttribute="width" id="vt6-OY-zLe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1lR-PM-eKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125" y="986"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="food_one.png" width="1434" height="1122"/>
+    </resources>
+</document>

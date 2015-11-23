@@ -16,5 +16,7 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (readwrite, nonatomic, retain) id<WordPressBaseApi> api;
 
+@property (strong, nonatomic) NSArray *posts;
+
 @end
 

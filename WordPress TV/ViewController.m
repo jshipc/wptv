@@ -10,6 +10,7 @@
 #import "WordPressApi.h"
 #import "WTTemplateAmitVC.h"
 #import "WTTemplateDane.h"
+#import "AppDelegate.h"
 
 static NSString *kSampleText = @" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was populari";
 
@@ -22,6 +23,10 @@ static NSString *kSampleText = @" simply dummy text of the printing and typesett
 
 @property (strong, nonatomic) NSTimer *nextSlideTimer;
 
+@property (strong, nonatomic) NSArray *posts;
+
+@property (strong, nonatomic) WTTemplateDane *fakeVC;
+
 @end
 
 @implementation ViewController
@@ -30,7 +35,7 @@ static NSString *kSampleText = @" simply dummy text of the printing and typesett
     
     [_nextSlideTimer invalidate];
     _nextSlideTimer = nil;
-    _nextSlideTimer = [NSTimer timerWithTimeInterval:3.0 target:self selector:@selector(showNextViewController) userInfo:nil repeats:YES];
+    _nextSlideTimer = [NSTimer timerWithTimeInterval:6.0 target:self selector:@selector(showNextViewController) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:_nextSlideTimer forMode:NSRunLoopCommonModes];
 }
 
@@ -78,6 +83,86 @@ static NSString *kSampleText = @" simply dummy text of the printing and typesett
     _pageController.dataSource = self;
     
     [self.view addSubview:_pageController.view];
+    [self preUpdateUI];
+}
+
+-(void)extractMeaningfulDictionariesFromArray:(NSArray*)dictionaries{
+    
+    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *dict in dictionaries) {
+        
+        NSArray *catergories = [dict objectForKey:@"categories"];
+        NSString *catergory = [catergories firstObject];
+        NSLog(@"catergory: %@", catergory);
+        
+        if ([catergory isEqualToString:@"apple-tv"]) {
+            [tempArray addObject:dict];
+        }
+    }
+    
+    self.posts = [NSArray arrayWithArray:tempArray];
+    
+    NSLog(@"the post : %@",self.posts);
+    
+    // grabs main thread, handles the result of the data fetch
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [self updateUI];
+        
+    });
+}
+
+-(void)preUpdateUI{
+    
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    NSString *username = [def objectForKey:@"wp_username"];
+    NSString *password = [def objectForKey:@"wp_password"];
+    NSString *xmlrpc = [def objectForKey:@"wp_xmlrpc"];
+    if (xmlrpc) {
+        if (username && password) {
+            WordPressRestApi *api = [WordPressApi apiWithXMLRPCURL:[NSURL URLWithString:xmlrpc] username:username password:password];
+            [api getPosts:10 success:^(NSArray *posts) {
+                [self extractMeaningfulDictionariesFromArray:posts];
+            } failure:^(NSError *error) {
+                NSLog(@"Error: %@", error);
+            }];
+        }
+    }
+}
+
+-(void)updateUI{
+    
+    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *dict in self.posts) {
+        
+        NSString *title = [dict objectForKey:@"title"];
+        NSString *description = [dict objectForKey:@"description"];
+        
+        NSString *imageURL = nil;
+        NSArray *customFields = [dict objectForKey:@"custom_fields"];
+        if (customFields) {
+            imageURL = [[customFields firstObject] objectForKey:@"value"];
+            NSLog(@"grabtag %@",imageURL);
+        }
+        
+        //NSString *description = [dict objectForKey:@"WP"];
+
+        WTTemplateAmitVC *newVC = [WTTemplateAmitVC instantiateFromStoryBoard];
+        [newVC prepareWithTitle:title message:description backgroundImageURL:imageURL];
+        [tempArray addObject:newVC];
+        
+        NSLog(@"creating new VC");
+    }
+//    
+//    _fakeVC = [[UIStoryboard storyboardWithName:@"WTTemplateDaneTwo" bundle:nil] instantiateViewControllerWithIdentifier:@"VersionTwo"];
+//    NSLog(@"%@",_fakeVC);
+//    _fakeVC.view.backgroundColor = [UIColor redColor];
+  //  [tempArray addObject:_fakeVC];
+    
+    _viewControllers = [NSArray arrayWithArray:tempArray];
+    [_pageController setViewControllers:@[[_viewControllers firstObject]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
 }
 
 -(void)viewWillLayoutSubviews{
@@ -90,7 +175,7 @@ static NSString *kSampleText = @" simply dummy text of the printing and typesett
     WTTemplateAmitVC *amitVC = [WTTemplateAmitVC instantiateFromStoryBoard];
     [amitVC prepareWithTitle:@"This is an Example Title" message:kSampleText backgroundImageURL:@"http://i.imgur.com/oYwWijF.jpg"];
     
-    WTTemplateDane *daneVC = [[WTTemplateDane alloc]init];
+    WTTemplateAmitVC *daneVC = [WTTemplateAmitVC instantiateFromStoryBoard];
     [daneVC prepareWithTitle:@"This is an Example Title" message:kSampleText backgroundImageURL:@"http://i.imgur.com/oYwWijF.jpg"];
     
     UIViewController *three = [[UIViewController alloc]init];

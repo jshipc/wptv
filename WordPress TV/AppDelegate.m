@@ -16,7 +16,7 @@
 
 @implementation AppDelegate
 
-+ (id)sharedInstance {
++ (id)sharedManager {
     static AppDelegate *sharedApplication = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -51,21 +51,50 @@
             if (xmlrpc) {
                 if (username && password) {
                     self.api = [WordPressApi apiWithXMLRPCURL:xmlrpcURL username:username password:password];
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"notificationForCompletion" object:nil];
                 }
             }
         }
         
-        [self.api getPosts:10 success:^(NSArray *posts) {
-            NSLog(@"posts:%@", posts);
-        } failure:^(NSError *error) {
-            NSLog(@"error:%@", error);
-        }];
+//        [self.api getPosts:10 success:^(NSArray *posts) {
+//            NSLog(@"posts:%@", posts);
+//            [self extractMeaningfulDictionariesFromArray:posts];
+//        } failure:^(NSError *error) {
+//            NSLog(@"error:%@", error);
+//        }];
     } failure:^(NSError *error) {
         NSLog(@"%@", error);
     }];
     
     
     return YES;
+}
+
+-(void)extractMeaningfulDictionariesFromArray:(NSArray*)dictionaries{
+    
+    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *dict in dictionaries) {
+        
+        NSArray *catergories = [dict objectForKey:@"categories"];
+        NSString *catergory = [catergories firstObject];
+        NSLog(@"catergory: %@", catergory);
+        
+        if ([catergory isEqualToString:@"apple-tv"]) {
+            [tempArray addObject:dict];
+        }
+    }
+    
+    _posts = [NSArray arrayWithArray:tempArray];
+    
+    NSLog(@"the post : %@",_posts);
+    
+    // grabs main thread, handles the result of the data fetch
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"DataIsReady" object:nil];
+        
+    });
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

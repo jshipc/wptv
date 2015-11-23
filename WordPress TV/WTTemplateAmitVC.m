@@ -31,11 +31,12 @@
 
 -(void)viewDidLoad{
     
+    _labelContainer.layer.cornerRadius = 10.0f;
+    _labelContainer.layer.masksToBounds = YES;
+    
     _pageTitle.text = _slideLabel;
     _pageMessage.text = _slideMessage;
     [_backgroundImage asyncSetImageWithURLString:_slideImageURL];
-    
-    _labelContainer.layer.cornerRadius = 3.0f;
 }
 
 -(void)prepareWithTitle:(NSString*)title message:(NSString*)message backgroundImageURL:(NSString*)stringURL{

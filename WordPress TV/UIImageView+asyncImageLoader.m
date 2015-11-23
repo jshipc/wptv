@@ -13,6 +13,8 @@
 
 -(void)asyncSetImageWithURLString:(NSString*)URLString{
     
+    if (!URLString) return;
+    
     __weak UIImageView *weakImageView = self;
     __weak NSString *weakURLString = URLString;
     
@@ -31,11 +33,19 @@
             
             NSData *imageData = [NSData dataWithContentsOfURL:URL];
             image = [UIImage imageWithData:imageData];
+
             
             // adds image to cache
             if (image){
-                [sharedCache setObject:image forKey:weakURLString];
-                weakImageView.image = image;
+                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    
+                    // do something on main thread
+                    [sharedCache setObject:image forKey:weakURLString];
+                    weakImageView.image = image;
+                    [weakImageView setNeedsLayout];
+                });
+
             }
         }
         else weakImageView.image = image;
